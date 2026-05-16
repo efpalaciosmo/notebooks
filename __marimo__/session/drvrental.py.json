@@ -1,0 +1,68 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.23.1",
+    "script_metadata_hash": null
+  },
+  "cells": [
+    {
+      "id": "Hbol",
+      "code_hash": "1d0db38904205bec4d6f6f6a1f6cec3e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "MJUe",
+      "code_hash": "0de4fbe955acbe34e9fb190c80534d2c",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": "95d2da2fce5fe38f7eafb58bc981bb3c",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='vblA-0' random-id='c02e9c80-4410-3797-e608-c11dc62fbbae'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;actor_id&#92;&quot;:1,&#92;&quot;first_name&#92;&quot;:&#92;&quot;Penelope&#92;&quot;,&#92;&quot;last_name&#92;&quot;:&#92;&quot;Guiness&#92;&quot;,&#92;&quot;last_update&#92;&quot;:&#92;&quot;2013-05-26 14:47:57.620000&#92;&quot;},{&#92;&quot;actor_id&#92;&quot;:2,&#92;&quot;first_name&#92;&quot;:&#92;&quot;Nick&#92;&quot;,&#92;&quot;last_name&#92;&quot;:&#92;&quot;Wahlberg&#92;&quot;,&#92;&quot;last_update&#92;&quot;:&#92;&quot;2013-05-26 14:47:57.620000&#92;&quot;},{&#92;&quot;actor_id&#92;&quot;:3,&#92;&quot;first_name&#92;&quot;:&#92;&quot;Ed&#92;&quot;,&#92;&quot;last_name&#92;&quot;:&#92;&quot;Chase&#92;&quot;,&#92;&quot;last_update&#92;&quot;:&#92;&quot;2013-05-26 14:47:57.620000&#92;&quot;},{&#92;&quot;actor_id&#92;&quot;:4,&#92;&quot;first_name&#92;&quot;:&#92;&quot;Jennifer&#92;&quot;,&#92;&quot;last_name&#92;&quot;:&#92;&quot;Davis&#92;&quot;,&#92;&quot;last_update&#92;&quot;:&#92;&quot;2013-05-26 14:47:57.620000&#92;&quot;},{&#92;&quot;actor_id&#92;&quot;:5,&#92;&quot;first_name&#92;&quot;:&#92;&quot;Johnny&#92;&quot;,&#92;&quot;last_name&#92;&quot;:&#92;&quot;Lollobrigida&#92;&quot;,&#92;&quot;last_update&#92;&quot;:&#92;&quot;2013-05-26 14:47:57.620000&#92;&quot;},{&#92;&quot;actor_id&#92;&quot;:6,&#92;&quot;first_name&#92;&quot;:&#92;&quot;Bette&#92;&quot;,&#92;&quot;last_name&#92;&quot;:&#92;&quot;Nicholson&#92;&quot;,&#92;&quot;last_update&#92;&quot;:&#92;&quot;2013-05-26 14:47:57.620000&#92;&quot;},{&#92;&quot;actor_id&#92;&quot;:7,&#92;&quot;first_name&#92;&quot;:&#92;&quot;Grace&#92;&quot;,&#92;&quot;last_name&#92;&quot;:&#92;&quot;Mostel&#92;&quot;,&#92;&quot;last_update&#92;&quot;:&#92;&quot;2013-05-26 14:47:57.620000&#92;&quot;},{&#92;&quot;actor_id&#92;&quot;:8,&#92;&quot;first_name&#92;&quot;:&#92;&quot;Matthew&#92;&quot;,&#92;&quot;last_name&#92;&quot;:&#92;&quot;Johansson&#92;&quot;,&#92;&quot;last_update&#92;&quot;:&#92;&quot;2013-05-26 14:47:57.620000&#92;&quot;},{&#92;&quot;actor_id&#92;&quot;:9,&#92;&quot;first_name&#92;&quot;:&#92;&quot;Joe&#92;&quot;,&#92;&quot;last_name&#92;&quot;:&#92;&quot;Swank&#92;&quot;,&#92;&quot;last_update&#92;&quot;:&#92;&quot;2013-05-26 14:47:57.620000&#92;&quot;},{&#92;&quot;actor_id&#92;&quot;:10,&#92;&quot;first_name&#92;&quot;:&#92;&quot;Christian&#92;&quot;,&#92;&quot;last_name&#92;&quot;:&#92;&quot;Gable&#92;&quot;,&#92;&quot;last_update&#92;&quot;:&#92;&quot;2013-05-26 14:47:57.620000&#92;&quot;}]&quot;' data-total-rows='200' data-total-columns='4' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;actor_id&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;first_name&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;last_name&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;last_update&quot;,[&quot;datetime&quot;,&quot;datetime64[us]&quot;]]]' data-show-filters='true' data-show-download='true' data-show-column-summaries='true' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "bkHC",
+      "code_hash": "1df28727b1dc6f90ca1e4df1f1b2e30e",
+      "outputs": [
+        {
+          "type": "error",
+          "ename": "exception",
+          "evalue": "name '_df' is not defined",
+          "traceback": null
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "<span class=\"codehilite\"><div class=\"highlight\"><pre><span></span><span class=\"gt\">Traceback (most recent call last):</span>\n  File <span class=\"nb\">&quot;/tmp/marimo_874/__marimo__cell_bkHC_.py&quot;</span>, line <span class=\"m\">1</span>, in <span class=\"n\">&lt;module&gt;</span>\n<span class=\"w\">    </span><span class=\"n\">_df</span><span class=\"o\">.</span><span class=\"n\">head</span><span class=\"p\">()</span>\n<span class=\"w\">    </span><span class=\"pm\">^^^</span>\n<span class=\"gr\">NameError</span>: <span class=\"n\">name &#39;_df&#39; is not defined</span>\n</pre></div>\n</span>",
+          "mimetype": "application/vnd.marimo+traceback"
+        }
+      ]
+    }
+  ]
+}

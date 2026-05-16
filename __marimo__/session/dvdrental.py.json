@@ -1,0 +1,1355 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.23.1",
+    "script_metadata_hash": null
+  },
+  "cells": [
+    {
+      "id": "Hbol",
+      "code_hash": "1d0db38904205bec4d6f6f6a1f6cec3e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "MJUe",
+      "code_hash": "192cee83c2c3507a5d433b2925925a8b",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": "74bf6e79ffc2e4a121afb2c76ddfd012",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-1\">Pregunta 1</h3>\n<span class=\"paragraph\">Lista los distintos valores de <code>rating</code> presentes en <code>film</code>, ordenados alfab\u00e9ticamente.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "bkHC",
+      "code_hash": "5f6b5a8075e266921f7f4bf135bf70e1",
+      "outputs": [
+        {
+          "type": "error",
+          "ename": "exception",
+          "evalue": "The following packages are required to execute sql: duckdb, sqlglot",
+          "traceback": null
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "<span class=\"codehilite\"><div class=\"highlight\"><pre><span></span><span class=\"gt\">Traceback (most recent call last):</span>\n  File <span class=\"nb\">&quot;/tmp/marimo_649/__marimo__cell_bkHC_.py&quot;</span>, line <span class=\"m\">1</span>, in <span class=\"n\">&lt;module&gt;</span>\n<span class=\"w\">    </span><span class=\"n\">mo</span><span class=\"o\">.</span><span class=\"n\">sql</span><span class=\"p\">(</span><span class=\"s2\">&quot;SELECT * FROM film&quot;</span><span class=\"p\">)</span>\n  File <span class=\"nb\">&quot;/home/efpalaciosmo/projects/notebooks/.venv/lib/python3.12/site-packages/marimo/_sql/sql.py&quot;</span>, line <span class=\"m\">64</span>, in <span class=\"n\">sql</span>\n<span class=\"w\">    </span><span class=\"n\">DependencyManager</span><span class=\"o\">.</span><span class=\"n\">require_many</span><span class=\"p\">(</span>\n  File <span class=\"nb\">&quot;/home/efpalaciosmo/projects/notebooks/.venv/lib/python3.12/site-packages/marimo/_dependencies/dependencies.py&quot;</span>, line <span class=\"m\">300</span>, in <span class=\"n\">require_many</span>\n<span class=\"w\">    </span><span class=\"k\">raise</span> <span class=\"n\">ManyModulesNotFoundError</span><span class=\"p\">(</span>\n<span class=\"gr\">marimo._dependencies.errors.ManyModulesNotFoundError</span>: <span class=\"n\">The following packages are required to execute sql: duckdb, sqlglot</span>\n</pre></div>\n</span>",
+          "mimetype": "application/vnd.marimo+traceback"
+        }
+      ]
+    },
+    {
+      "id": "lEQa",
+      "code_hash": "17ce8fb429573eafabfc9bc02f632274",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-2\">Pregunta 2</h3>\n<span class=\"paragraph\">Muestra las 20 pel\u00edculas m\u00e1s largas con <code>title</code>, <code>length</code>, <code>rating</code> y <code>rental_rate</code>.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "PKri",
+      "code_hash": "caeaa2499478a64e21f6da82bab912cc",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-3\">Pregunta 3</h3>\n<span class=\"paragraph\">Encuentra todos los clientes inactivos (<code>active = 0</code>) mostrando <code>customer_id</code>, nombre completo y email.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Xref",
+      "code_hash": "7c587e398ff5662cd393d4eb5af164cd",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-4\">Pregunta 4</h3>\n<span class=\"paragraph\">Lista los clientes de la tienda 1 (<code>store_id = 1</code>) con <code>customer_id</code>, nombre completo y email.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "SFPL",
+      "code_hash": "649df6f28193bdb35d89752cba4d95b7",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-5\">Pregunta 5</h3>\n<span class=\"paragraph\">Cuenta cu\u00e1ntas pel\u00edculas hay por cada <code>release_year</code>. Incluye tambi\u00e9n las filas donde el a\u00f1o sea <code>NULL</code>.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "BYtC",
+      "code_hash": "ba400ae4d2aae35c8f543dc24752f30a",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-6\">Pregunta 6</h3>\n<span class=\"paragraph\">Muestra los actores cuyo <code>last_name</code> empieza por <code>S</code>, ordenados por apellido y nombre.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "RGSE",
+      "code_hash": "301667537ad5e20efff07c33894045ef",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-7\">Pregunta 7</h3>\n<span class=\"paragraph\">Encuentra las pel\u00edculas con <code>replacement_cost</code> entre 20 y 25 y <code>rating = 'PG-13'</code>.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Kclp",
+      "code_hash": "a65eba25b52a9dd8a9229d51acd7ae0a",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-8\">Pregunta 8</h3>\n<span class=\"paragraph\">Calcula, para los alquileres ya devueltos, la duraci\u00f3n del alquiler en d\u00edas usando <code>return_date - rental_date</code>.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "emfo",
+      "code_hash": "16e04057e858f0086ca798f03607fa5a",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-9\">Pregunta 9</h3>\n<span class=\"paragraph\">Muestra las pel\u00edculas cuyo t\u00edtulo contiene la palabra <code>LOVE</code>, sin distinguir may\u00fasculas/min\u00fasculas.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Hstk",
+      "code_hash": "7b52337670eb71bda5d41c0d95df878a",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-10\">Pregunta 10</h3>\n<span class=\"paragraph\">Encuentra las pel\u00edculas cuyo campo <code>special_features</code> contiene <code>Behind the Scenes</code>.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "nWHF",
+      "code_hash": "dafe6936e8fe9ba2e68c9a12befb3a74",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-11\">Pregunta 11</h3>\n<span class=\"paragraph\">Lista todas las pel\u00edculas con su idioma (<code>film.title</code>, <code>language.name</code>).</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "iLit",
+      "code_hash": "db9b2db54e72ea1979f1eb4b4acdfacd",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-12\">Pregunta 12</h3>\n<span class=\"paragraph\">Muestra cada pel\u00edcula junto con todos sus actores (<code>film.title</code>, nombre completo del actor).</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ZHCJ",
+      "code_hash": "61687fe57678d4197e6b2bad2e359866",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-13\">Pregunta 13</h3>\n<span class=\"paragraph\">Muestra cada pel\u00edcula junto con todas sus categor\u00edas (<code>film.title</code>, <code>category.name</code>).</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ROlb",
+      "code_hash": "eb8ab94fe54986aa57400e9352876a98",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-14\">Pregunta 14</h3>\n<span class=\"paragraph\">Lista los clientes con su ciudad y pa\u00eds (<code>customer</code>, <code>address</code>, <code>city</code>, <code>country</code>).</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "qnkX",
+      "code_hash": "857f63131f0b06d32ca2776d479e45ff",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-15\">Pregunta 15</h3>\n<span class=\"paragraph\">Muestra cada alquiler con <code>rental_id</code>, fecha de alquiler, nombre del cliente y t\u00edtulo de la pel\u00edcula alquilada.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "TqIu",
+      "code_hash": "8c15b71652b864ad1c2ac61270992636",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-16\">Pregunta 16</h3>\n<span class=\"paragraph\">Lista todos los pagos con el cliente que pag\u00f3 y el empleado (<code>staff</code>) que atendi\u00f3 la transacci\u00f3n.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Vxnm",
+      "code_hash": "a0e9d6adfbfb411bed1d07a2f5fc59c1",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-17\">Pregunta 17</h3>\n<span class=\"paragraph\">Cuenta cu\u00e1ntas copias de cada pel\u00edcula hay en inventario por tienda.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "DnEU",
+      "code_hash": "b605194fc0a88c7e9a6fa3d8df5006db",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-18\">Pregunta 18</h3>\n<span class=\"paragraph\">Encuentra las pel\u00edculas que nunca han sido agregadas al inventario.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ulZA",
+      "code_hash": "9d7e04c958b747449d4ea7ceaffb605a",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-19\">Pregunta 19</h3>\n<span class=\"paragraph\">Encuentra los actores que nunca han participado en pel\u00edculas con <code>rating = 'R'</code>.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ecfG",
+      "code_hash": "e27719742c92ade7774cdb0754f20c05",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-20\">Pregunta 20</h3>\n<span class=\"paragraph\">Muestra cada tienda con el nombre completo de su gerente, ciudad y pa\u00eds.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Pvdt",
+      "code_hash": "fc4ec4f43e9d7818bd56e3d17627e60e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-21\">Pregunta 21</h3>\n<span class=\"paragraph\">Cuenta cu\u00e1ntas pel\u00edculas hay por <code>rating</code>.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ZBYS",
+      "code_hash": "e2e9707c7227056fc8334fab346eeace",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-22\">Pregunta 22</h3>\n<span class=\"paragraph\">Calcula la duraci\u00f3n promedio y la tarifa de alquiler promedio por categor\u00eda.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "aLJB",
+      "code_hash": "f724b216231eaee6f8a5e025673e8794",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-23\">Pregunta 23</h3>\n<span class=\"paragraph\">Calcula el monto total pagado por cada cliente y ord\u00e9nalos de mayor a menor.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "nHfw",
+      "code_hash": "14aec60ba5fbbb6cfa48ee6ca1f3fafe",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-24\">Pregunta 24</h3>\n<span class=\"paragraph\">Cuenta cu\u00e1ntos alquileres ocurrieron por mes usando <code>date_trunc('month', rental_date)</code>.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "xXTn",
+      "code_hash": "dd4e07e12e93506966d84a83f039f19c",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-25\">Pregunta 25</h3>\n<span class=\"paragraph\">Calcula los ingresos totales por tienda usando la tabla <code>payment</code>.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "AjVT",
+      "code_hash": "4521d4fe35ca9550a7ce31be7386c7d8",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-26\">Pregunta 26</h3>\n<span class=\"paragraph\">Encuentra los clientes con m\u00e1s de 30 alquileres.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "pHFh",
+      "code_hash": "b79ce94bb49b0e18cfa0081b8d54b6f9",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-27\">Pregunta 27</h3>\n<span class=\"paragraph\">Obt\u00e9n el top 10 de actores con m\u00e1s pel\u00edculas en las que han participado.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "NCOB",
+      "code_hash": "3ef4d1d8f2b9fdf5bccb4d7b63ee9a7a",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-28\">Pregunta 28</h3>\n<span class=\"paragraph\">Encuentra las categor\u00edas con costo de reemplazo promedio mayor a 20.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "aqbW",
+      "code_hash": "5c69e3b363182877c351445ffbc621aa",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-29\">Pregunta 29</h3>\n<span class=\"paragraph\">Calcula qu\u00e9 porcentaje del cat\u00e1logo representa cada <code>rating</code> sobre el total de pel\u00edculas.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "TRpd",
+      "code_hash": "4a7f83f9b999be9918735f25ea60e91f",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-30\">Pregunta 30</h3>\n<span class=\"paragraph\">Calcula la mediana de <code>amount</code> en <code>payment</code> por cliente usando funciones de percentil de PostgreSQL.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "TXez",
+      "code_hash": "af876b412a0805cf7e4a839890b2e3b2",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-31\">Pregunta 31</h3>\n<span class=\"paragraph\">Encuentra las pel\u00edculas cuya duraci\u00f3n (<code>length</code>) es mayor que la duraci\u00f3n promedio de todas las pel\u00edculas.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "dNNg",
+      "code_hash": "56354b3aeafab10ec1993f35164f4239",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-32\">Pregunta 32</h3>\n<span class=\"paragraph\">Encuentra los clientes cuyo gasto total supera el gasto total promedio por cliente.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "yCnT",
+      "code_hash": "f371eba2d3cf11dc1b0402d95d5a1ded",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-33\">Pregunta 33</h3>\n<span class=\"paragraph\">Encuentra las pel\u00edculas que pertenecen a la misma categor\u00eda que <code>ACADEMY DINOSAUR</code>, excluyendo la propia pel\u00edcula.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "wlCL",
+      "code_hash": "010244be94963f7fbd827b3e18624713",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-34\">Pregunta 34</h3>\n<span class=\"paragraph\">Encuentra los clientes que nunca han realizado un alquiler.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "kqZH",
+      "code_hash": "b463aafb14508fe24bd3c22701f1927d",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-35\">Pregunta 35</h3>\n<span class=\"paragraph\">Encuentra las pel\u00edculas que han sido alquiladas al menos una vez en cada tienda.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "wAgl",
+      "code_hash": "77aec503b80f92e9680ca8004097cb74",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-36\">Pregunta 36</h3>\n<span class=\"paragraph\">Encuentra las categor\u00edas cuyo n\u00famero de pel\u00edculas es mayor que el promedio de pel\u00edculas por categor\u00eda.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "rEll",
+      "code_hash": "48cbb53aefa089e1b7630013198d4595",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-37\">Pregunta 37</h3>\n<span class=\"paragraph\">Para cada <code>rating</code>, muestra las pel\u00edculas cuyo <code>rental_rate</code> es mayor que el promedio de su mismo <code>rating</code>.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "dGlV",
+      "code_hash": "103ed7883e80b7fff82dbcea3055dc0c",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-38\">Pregunta 38</h3>\n<span class=\"paragraph\">Encuentra los actores que han trabajado en al menos una pel\u00edcula de todas las categor\u00edas existentes.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "SdmI",
+      "code_hash": "f96ebd9be4c3f96bfdf41c3fd122572e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-39\">Pregunta 39</h3>\n<span class=\"paragraph\">Encuentra los clientes que han pagado al menos un monto superior al promedio global de pagos.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "lgWD",
+      "code_hash": "3e8338ac9cc4ba9026c41ee243ca918f",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-40\">Pregunta 40</h3>\n<span class=\"paragraph\">Encuentra las pel\u00edculas que nunca han sido alquiladas por clientes de la tienda 2.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "yOPj",
+      "code_hash": "a6600d1eda316d4f59dc89395cd01e8e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-41\">Pregunta 41</h3>\n<span class=\"paragraph\">Usa un CTE para calcular por cliente: n\u00famero de alquileres, total pagado y ticket promedio.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "fwwy",
+      "code_hash": "89b487ac07a2eae05001f718cb5c62b5",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-42\">Pregunta 42</h3>\n<span class=\"paragraph\">Usa un CTE para obtener la primera y la \u00faltima fecha de alquiler de cada cliente.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "LJZf",
+      "code_hash": "ee7128a766cdffb40b5e2103082e6f11",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-43\">Pregunta 43</h3>\n<span class=\"paragraph\">Construye un CTE que derive los ingresos por pel\u00edcula a partir de <code>payment -&gt; rental -&gt; inventory -&gt; film</code>.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "urSm",
+      "code_hash": "445f858a59220e1d53bb03e1f1d4e46c",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-44\">Pregunta 44</h3>\n<span class=\"paragraph\">Usa un CTE para clasificar clientes en <code>low</code>, <code>medium</code> y <code>high value</code> seg\u00fan su gasto total.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "jxvo",
+      "code_hash": "38036effbccee0d6d04e5886b5c2f3df",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-45\">Pregunta 45</h3>\n<span class=\"paragraph\">Construye una tabla de cohortes por mes de creaci\u00f3n de cliente (<code>customer.create_date</code>) y cuenta cu\u00e1ntos hicieron su primer alquiler en cada mes.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "mWxS",
+      "code_hash": "1794263b5635b0444a5aeac9f1227ba8",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-46\">Pregunta 46</h3>\n<span class=\"paragraph\">Usa CTEs para detectar posibles clientes duplicados con mismo nombre, apellido y direcci\u00f3n.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "CcZR",
+      "code_hash": "2086a48e2365d299be9e886fceace4d0",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-47\">Pregunta 47</h3>\n<span class=\"paragraph\">Calcula la utilizaci\u00f3n del inventario por tienda: copias totales, copias alquiladas al menos una vez y porcentaje de utilizaci\u00f3n.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "YWSi",
+      "code_hash": "281269a26a80a51f7f4c5eff7af61aa6",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-48\">Pregunta 48</h3>\n<span class=\"paragraph\">Usa un CTE para encontrar la pel\u00edcula m\u00e1s alquilada dentro de cada categor\u00eda.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "zlud",
+      "code_hash": "78bc90e5c08e57899ef0c43f35671345",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-49\">Pregunta 49</h3>\n<span class=\"paragraph\">Construye una consulta tipo 'vista anal\u00edtica' con una fila por cliente que incluya datos demogr\u00e1ficos, geograf\u00eda, n\u00famero de alquileres y gasto total.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "tZnO",
+      "code_hash": "4f7ad628ed268da573d169d5c6671331",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-50\">Pregunta 50</h3>\n<span class=\"paragraph\">Genera con CTEs una tabla mensual por tienda con <code>rentals</code>, <code>revenue</code>, <code>unique_customers</code> y <code>avg_payment_amount</code>.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "xvXZ",
+      "code_hash": "cb394f61fb55cbfd9a096f357fd31d6d",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-51\">Pregunta 51</h3>\n<span class=\"paragraph\">Rankea a los clientes por gasto total dentro de cada tienda usando <code>dense_rank()</code>.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "CLip",
+      "code_hash": "e8e311b521d147d5c1a86c837e794481",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-52\">Pregunta 52</h3>\n<span class=\"paragraph\">Calcula el acumulado diario de ingresos usando <code>sum(amount) over (...)</code>.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "YECM",
+      "code_hash": "2fea8d80f100ab4366b7872732191302",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-53\">Pregunta 53</h3>\n<span class=\"paragraph\">Calcula el promedio m\u00f3vil de 7 d\u00edas del n\u00famero de alquileres diarios.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "cEAS",
+      "code_hash": "ef42729534bdcc8acae59576966266de",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-54\">Pregunta 54</h3>\n<span class=\"paragraph\">Obt\u00e9n el top 3 de pel\u00edculas m\u00e1s alquiladas por categor\u00eda usando <code>row_number()</code> o <code>dense_rank()</code>.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "iXej",
+      "code_hash": "fab4152d95d661656d83f31ea1a44ed3",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-55\">Pregunta 55</h3>\n<span class=\"paragraph\">Para cada cliente, calcula los d\u00edas transcurridos entre un alquiler y el siguiente usando <code>lag()</code>.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "EJmg",
+      "code_hash": "3d621bd23472aca2e76b6406fb251a40",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-56\">Pregunta 56</h3>\n<span class=\"paragraph\">Calcula el percentil de longitud de cada pel\u00edcula dentro de su <code>rating</code> usando <code>percent_rank()</code> o <code>cume_dist()</code>.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "UmEG",
+      "code_hash": "9ff3c1b6e935eff971a58389fe77a04a",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-57\">Pregunta 57</h3>\n<span class=\"paragraph\">Obt\u00e9n el primer y el \u00faltimo pago de cada cliente usando funciones ventana.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vEBW",
+      "code_hash": "2766237c88068bc925e3758204bb263d",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-58\">Pregunta 58</h3>\n<span class=\"paragraph\">Calcula qu\u00e9 proporci\u00f3n del revenue de cada tienda aporta cada empleado (<code>staff</code>).</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "kLmu",
+      "code_hash": "29ec3e6da1fd907c1abf56669dad3221",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-59\">Pregunta 59</h3>\n<span class=\"paragraph\">Calcula el acumulado mensual de alquileres por categor\u00eda a lo largo del tiempo.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "IpqN",
+      "code_hash": "5abf80d6abed6096b3d48024a30c225a",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-60\">Pregunta 60</h3>\n<span class=\"paragraph\">Encuentra los clientes cuyo \u00faltimo pago fue mayor que su promedio hist\u00f3rico de pagos.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "dxZZ",
+      "code_hash": "581d3d57fac70a70b22ab6560b2fe677",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-61\">Pregunta 61</h3>\n<span class=\"paragraph\">Identifica alquileres devueltos tarde: aquellos donde los d\u00edas alquilados superan <code>film.rental_duration</code>.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "dlnW",
+      "code_hash": "ea1d147d03bc9afcd82509c7c9e1d833",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-62\">Pregunta 62</h3>\n<span class=\"paragraph\">Compara cu\u00e1ntos alquileres se hicieron en fines de semana vs d\u00edas de semana.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "TTti",
+      "code_hash": "f24fa068d44a2da241e5ef2d3ff840ab",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-63\">Pregunta 63</h3>\n<span class=\"paragraph\">Calcula los clientes activos por mes (<code>monthly active customers</code>).</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "RKFZ",
+      "code_hash": "8abf1de7f2edf5601fdfd6670fd44bb7",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-64\">Pregunta 64</h3>\n<span class=\"paragraph\">Calcula el tiempo promedio de devoluci\u00f3n por categor\u00eda.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "IaQp",
+      "code_hash": "de342e5d522b17ef48f39323ba653f44",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-65\">Pregunta 65</h3>\n<span class=\"paragraph\">Encuentra el trimestre con mayores ingresos en cada a\u00f1o.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "IWgg",
+      "code_hash": "9c37830993b0e7bef3741e291ff875dd",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-66\">Pregunta 66</h3>\n<span class=\"paragraph\">Analiza el patr\u00f3n horario: alquileres e ingresos por hora del d\u00eda.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "fCoF",
+      "code_hash": "4c867418a7ed00b1557f96b43908bb96",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-67\">Pregunta 67</h3>\n<span class=\"paragraph\">Encuentra clientes inactivos: aquellos que no alquilaron nada en los \u00faltimos 90 d\u00edas del dataset.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "LkGn",
+      "code_hash": "9abcfdcd93693c367ac9abf7c3c6fde1",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-68\">Pregunta 68</h3>\n<span class=\"paragraph\">Construye una tabla de retenci\u00f3n: mes de primera compra vs clientes que repiten en los meses 1, 2 y 3.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "zVRe",
+      "code_hash": "a8f9c7b664666dc78cbeda5957efa4a7",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-69\">Pregunta 69</h3>\n<span class=\"paragraph\">Calcula la mediana de d\u00edas entre alquileres consecutivos para clientes recurrentes.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "woaO",
+      "code_hash": "176002bcd6b4ab37065362abf56601d4",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-70\">Pregunta 70</h3>\n<span class=\"paragraph\">Calcula cu\u00e1nto revenue genera cada cliente en sus primeros 30 d\u00edas desde <code>create_date</code>.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "HnMC",
+      "code_hash": "ce491e703d4db204f8fb7bf81998b601",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-71\">Pregunta 71</h3>\n<span class=\"paragraph\">Construye una m\u00e9trica tipo CLV por cliente con <code>total_revenue</code>, <code>total_rentals</code> y <code>avg_payment_amount</code>.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "wadT",
+      "code_hash": "310db1a4397165edef8e2999041c7a52",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-72\">Pregunta 72</h3>\n<span class=\"paragraph\">Define churn como 'sin alquiler en los \u00faltimos 60 d\u00edas del dataset' y calcula la tasa de churn por tienda.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "VCRE",
+      "code_hash": "702d7ce1ad54968ea92d8f9f3bfc8b80",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-73\">Pregunta 73</h3>\n<span class=\"paragraph\">Encuentra pares de categor\u00edas que suelen ser consumidas por los mismos clientes (cross-sell).</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "hgqU",
+      "code_hash": "d2ac53173d1ac5d0f483d088459983f7",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-74\">Pregunta 74</h3>\n<span class=\"paragraph\">Encuentra los pares de actores que m\u00e1s veces han participado juntos en una misma pel\u00edcula.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "PSUk",
+      "code_hash": "e81af65769f5a839adafc41355d68b09",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-75\">Pregunta 75</h3>\n<span class=\"paragraph\">Identifica pel\u00edculas con alta demanda pero bajo inventario: muchas rentas y pocas copias disponibles.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "mfOT",
+      "code_hash": "6972d663d2a5cdb67be0dcf853b4e288",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-76\">Pregunta 76</h3>\n<span class=\"paragraph\">Compara las preferencias de categor\u00eda entre tiendas y muestra en qu\u00e9 categor\u00edas difieren m\u00e1s.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vGiW",
+      "code_hash": "22348289154609a1e9cb9d1b6de0012d",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-77\">Pregunta 77</h3>\n<span class=\"paragraph\">Obt\u00e9n el top 3 de categor\u00edas por ingresos dentro de cada pa\u00eds.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "SYQT",
+      "code_hash": "5b5cf70b599cbb2bd5855a147c6456f7",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-78\">Pregunta 78</h3>\n<span class=\"paragraph\">Analiza la relaci\u00f3n entre duraci\u00f3n de la pel\u00edcula y revenue generado, segmentando por <code>rating</code>.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "bMrW",
+      "code_hash": "f6279ce43baf3dc51c9c63cf552d5b2c",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-79\">Pregunta 79</h3>\n<span class=\"paragraph\">Construye una segmentaci\u00f3n RFM (<code>recency</code>, <code>frequency</code>, <code>monetary</code>) para los clientes.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "PSQn",
+      "code_hash": "9a482fefc10c729a8c849de792eb046d",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-80\">Pregunta 80</h3>\n<span class=\"paragraph\">Eval\u00faa la productividad de <code>staff</code>: pagos procesados, revenue total y ticket promedio por empleado.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "OfTS",
+      "code_hash": "0f13788707b46999b994b672e5812b76",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-81\">Pregunta 81</h3>\n<span class=\"paragraph\">Escribe una consulta que audite cu\u00e1ntos <code>NULL</code> hay por columna en la tabla <code>customer</code>.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "lQxp",
+      "code_hash": "308c80cc9fb687e2d684596bc6e77219",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-82\">Pregunta 82</h3>\n<span class=\"paragraph\">Verifica si existen pagos con <code>amount &lt;= 0</code>.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Plbk",
+      "code_hash": "843012074a03e192c4d048ac37b8c601",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-83\">Pregunta 83</h3>\n<span class=\"paragraph\">Busca emails duplicados en <code>customer</code>.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "rSYo",
+      "code_hash": "f813dd5d808f9e070decada02c0f46e0",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-84\">Pregunta 84</h3>\n<span class=\"paragraph\">Detecta alquileres donde <code>return_date</code> sea anterior a <code>rental_date</code>.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "HuZB",
+      "code_hash": "eb0ca558348cd83b74be81cedbe5e033",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-85\">Pregunta 85</h3>\n<span class=\"paragraph\">Verifica integridad referencial l\u00f3gica buscando registros hu\u00e9rfanos entre <code>payment</code>, <code>rental</code>, <code>inventory</code>, <code>customer</code> y <code>staff</code>.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "WfYj",
+      "code_hash": "4f6390f0d7c7846428aafad4f2eb20bc",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-86\">Pregunta 86</h3>\n<span class=\"paragraph\">Genera una consulta incremental basada en <code>last_update</code> para extraer solo cambios recientes de <code>film</code>.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Ynfw",
+      "code_hash": "2833ced290deea5d2b443d240007e0e6",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-87\">Pregunta 87</h3>\n<span class=\"paragraph\">Construye una consulta que produzca una fact table diaria a nivel <code>store_id</code>, <code>film_id</code>, <code>date</code> con <code>rentals</code>, <code>revenue</code> y <code>unique_customers</code>.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "LqFA",
+      "code_hash": "05f221824423971e72ef3562e767f340",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-88\">Pregunta 88</h3>\n<span class=\"paragraph\">Crea una consulta que compare el revenue total de <code>payment</code> contra el revenue atribuido a pel\u00edculas y detecte diferencias.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "uDnK",
+      "code_hash": "a212685636f5351a60abe8c42a5f7ee3",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-89\">Pregunta 89</h3>\n<span class=\"paragraph\">Escribe la consulta base para una vista materializada mensual por tienda y categor\u00eda.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "aWBL",
+      "code_hash": "c68d943511ffd6d0e3ee77fd0e26cf99",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-90\">Pregunta 90</h3>\n<span class=\"paragraph\">Dise\u00f1a una consulta que detecte clientes potencialmente fusionables usando similitud en nombre, apellido y direcci\u00f3n.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "MIsd",
+      "code_hash": "b8c20aad3d480044f7c8cdd0469a0363",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-91\">Pregunta 91</h3>\n<span class=\"paragraph\">Para cada pa\u00eds, devuelve el top 5 de clientes por revenue incluyendo empates.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "IrqS",
+      "code_hash": "3708f905334b64bc77cf5dc21622ae27",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-92\">Pregunta 92</h3>\n<span class=\"paragraph\">Devuelve una sola fila por cliente con: categor\u00eda favorita, actor favorito, \u00faltima fecha de alquiler y gasto total.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Lpqv",
+      "code_hash": "11b7ece597a87d42561ff9338ab3b371",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-93\">Pregunta 93</h3>\n<span class=\"paragraph\">Encuentra las pel\u00edculas cuya cantidad de alquileres en el \u00faltimo mes disponible al menos se duplic\u00f3 respecto al mes anterior.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "upgv",
+      "code_hash": "3d753f300b783d1e89dd3303c0b549cf",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-94\">Pregunta 94</h3>\n<span class=\"paragraph\">Detecta pagos an\u00f3malos: montos que est\u00e9n a m\u00e1s de 3 desviaciones est\u00e1ndar del promedio diario de su tienda.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "WJUG",
+      "code_hash": "919e05bac97049ee73bd7089bf39db41",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-95\">Pregunta 95</h3>\n<span class=\"paragraph\">Encuentra las categor\u00edas cuya contribuci\u00f3n porcentual al revenue ha crecido por al menos 3 meses consecutivos.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "pCao",
+      "code_hash": "eed48fa26f0e157f39a3b5b96a09aa67",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-96\">Pregunta 96</h3>\n<span class=\"paragraph\">Para cada tienda, encuentra el conjunto m\u00ednimo de pel\u00edculas que explica el 80% de los alquileres (an\u00e1lisis de Pareto).</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "wEIy",
+      "code_hash": "dd5c1d056208eeefe9b8a790fb3ab36c",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-97\">Pregunta 97</h3>\n<span class=\"paragraph\">Identifica clientes cuyo mix de categor\u00edas en sus \u00faltimos 5 alquileres es muy distinto de su historial previo.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "wlyU",
+      "code_hash": "0557a4b43e25d80de70302ba587ec496",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-98\">Pregunta 98</h3>\n<span class=\"paragraph\">Encuentra los clientes que han alquilado al menos una pel\u00edcula de todas las categor\u00edas disponibles en su tienda habitual.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "PieA",
+      "code_hash": "9a878024f6ab5a41e8fb1cb3ebe11b50",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-99\">Pregunta 99</h3>\n<span class=\"paragraph\">Construye un funnel por cliente: creado -&gt; primer alquiler -&gt; segundo alquiler dentro de 30 d\u00edas.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "GrQN",
+      "code_hash": "6f9780f249d76aefc535f84eb6869e9d",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pregunta-100\">Pregunta 100</h3>\n<span class=\"paragraph\">Construye una consulta ejecutiva mensual por tienda con <code>active_customers</code>, <code>rentals</code>, <code>revenue</code>, <code>AOV</code>, <code>avg_return_days</code>, <code>pct_late_returns</code> y <code>top_category</code>.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    }
+  ]
+}
